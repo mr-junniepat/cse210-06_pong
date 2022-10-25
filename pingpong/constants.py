@@ -97,7 +97,7 @@ RACKET_GROUP = "rackets"
 RACKET_IMAGES = [f"pingpong/assets/images/{n:03}.png" for n in range(100, 103)], [f"pingpong/assets/images/{n:03}.png" for n in range(103, 106)]
 # RACKET_IMAGES1 = [f"pingpong/assets/images/{n:03}.png" for n in range(103, 106)]
 RACKET_WIDTH = 30
-RACKET_HEIGHT = 100
+RACKET_HEIGHT = 120
 RACKET_RATE = 7
 RACKET_VELOCITY = 8
 
