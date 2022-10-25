@@ -13,16 +13,16 @@ class ControlRacketAction(Action):
         rackets = cast.get_actors(RACKET_GROUP)
         for i, racket in enumerate(rackets):
             if i == 0:
-                if self._keyboard_service.is_key_down('a'): 
+                if self._keyboard_service.is_key_down(PLAYER_A_KEY_UP): 
                     racket.move_up()
-                elif self._keyboard_service.is_key_down('d'): 
+                elif self._keyboard_service.is_key_down(PLAYER_A_KEY_DOWN): 
                     racket.move_down()  
                 else: 
                     racket.stop_moving()
             else:
-                if self._keyboard_service.is_key_down('o'): 
+                if self._keyboard_service.is_key_down(PLAYER_B_KEY_UP): 
                     racket.move_up()
-                elif self._keyboard_service.is_key_down('p'): 
+                elif self._keyboard_service.is_key_down(PLAYER_B_KEY_DOWN): 
                     racket.move_down()  
                 else: 
                     racket.stop_moving()
